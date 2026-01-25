@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:latest
+    container_name: etheriavr_container
+    environment: 
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_DATABASE: etheriavr_db
+      MYSQL_USER: manuel
+      MYSQL_PASSWORD: 1234
+    ports: 
+      - "3308:3306"
+    restart: always
